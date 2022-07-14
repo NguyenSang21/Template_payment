@@ -178,7 +178,7 @@
               };
               function sendMessage() {
                 console.log('dc k :>> ');
-                const popup = window.open('http://127.0.0.1:5501/src/request-payment-link.html', 'WIEcoPay', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700');
+                const popup = window.open('http://54.245.30.137/request-payment-link.html', 'WIEcoPay', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700');
                 // popup.postMessage("Hello, window-2! i am window-1", "http://127.0.0.1:5500/request-payment-link.html");
                 var timer = setInterval(function () {
                   if (popup.closed) {
@@ -188,7 +188,7 @@
 
                     function receiveMessage(evt) {
                       console.log('evt.origin :>> ', evt);
-                      if (evt.origin !== 'http://127.0.0.1:5501') return;
+                      if (evt.origin !== 'http://54.245.30.137/request-payment-link.html') return;
                       alert("got message: " + evt.data);
 
                     }
